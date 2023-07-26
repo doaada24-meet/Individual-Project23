@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+    <style >
+        
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <form method="POST" action="/signup">
+        <!-- Heading -->
+        <h4>
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" maxlength="10" required>
+            </div>
+        </div>
+         <div>
+            <label>fullname*</label>
+            <div class="input-group">
+                <input type="fullname"  name="full_name" maxlength="280" required>
+            </div>
+        </div>
+         <div>
+            <label>username</label>
+            <div class="input-group">
+                <input type="username"  name="username" maxlength="280" required>
+            </div>
+        </div>
+        <div>
+            <label>bio</label>
+            <div class="input-group">
+                <input type="bio"  name="bio" maxlength="280" required>
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <br>
+   
+  <div class="map">
+    <a href="/map "><button>map</button></a>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+<style>
+   /* *{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+    }*/
+    .ddd{
+        width: 100%;
+        height: 100vh;
+        background-color: #E9FF33;
+
+    }
+    .navbar{
+        width:85%;
+        margin:auto;
+        padding:35px 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .navbar ul li 
+    {
+        list-style: none;
+        display: inline-block;
+        margin:0 20px;
+        position: relative;
+    }
+    
+    .navbar ul li a{
+        text-decoration :none;
+        color:#33FFF0;
+        text-transform:uppercase ;
+    }
+
+    .navbar ul li a::after{
+        content:'';
+        height:3px;
+        width:0;
+        background:#009688;
+        position:absolute;
+        left:0;
+        bottom:-10px;
+        transition:0.5s ;
+
+
+    }
+    .navbar ul li a:hover::after{
+        width:100%;
+
+        
+
+    }
+    .content {
+        width:100%;
+        position: absolute;
+        top:30%;
+        transform: translateY(-50%);
+        text-align: left;
+        color:#3399FF;
+        font-family:monospace ;
+
+    }
+    .content h1{
+        font-size:70px;
+        margin-top: 80px;
+    }
+    .content img{
+        img-align:right;
+
+    }
+
+</style>
+</head>
+<body>
+   <div class="ddd">
+    <div class="navbar">
+      <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/signin">SIGNIN</a></li>
+         <li><a href="/signup">SIGNUP</a></li>
+         <li><a href="/about">About</a></li>
+        <!-- <li><a href="/cards">cards</a></li>
+         <li><a href="/map">map</a></li>
+     -->
+
+
+      </ul>
+    </div>
+ </div>
+    <div class="content">
+        <h1> WELCOME TO STYLISTAX</h1>
+        <img src="hello.png"></img>
+
+        
+    </div>    
+    
+
+
+
+
+    
+</body>
+</html>

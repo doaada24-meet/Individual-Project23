@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Pushpins</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body background="{{ url_for('static', filename='mapp.jpg') }}">
+  {{username}}
+    <div id="map">
+        <!-- Use your map image as the background image of the map container -->
+        <!-- Anchor tags as pushpins -->
+        <a href="/cards/palestine" class="pushpin" id="pushpin1"></a>
+        <a href="/signup" class="pushpin" id="pushpin2"></a>
+        <a href="/about" class="pushpin" id="pushpin3"></a>
+    </div>
+</body>
+</html>
+
+  
+ 
+
+  <!-- Add click event listener to the pushpin -->
+  <!--<script>
+    const pushpin = document.getElementById('pushpin');
+
+    pushpin.addEventListener('click', () => 
+    {
+      // Example: Redirect to a specific page when the pushpin is clicked
+      window.location.href = 'cards.html'});
+    
+  </script>-->
